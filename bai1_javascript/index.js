@@ -14,6 +14,8 @@ var text = (document.getElementById("demo").innerHTML =
   "<input type='button' value = 'Sap xep tang' onClick= 'sort1()'/>" +
   "<input type='button' value = 'Sap xep giam' onClick= 'sort2()'/>" +
   "</form>");
+// 
+
 // var a1 = document.getElementsByClassName("inputValue2");
 var a = document.getElementsByClassName("inputValue");
 var b = a[0].value;
