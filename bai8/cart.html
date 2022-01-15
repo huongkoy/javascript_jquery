@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <style type="text/css">
+        body {
+            padding-top: 54px;
+        }
+
+        @media (min-width: 992px) {
+            body {
+                padding-top: 56px;
+            }
+        }
+
+        .cart-item-count {
+            position: relative;
+        }
+
+        .cesta-feira__num-items {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #fff;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -2px;
+            right: -12px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        img {
+            width: 15%;
+            height: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link cart-item-count" href="cart.html" data-cesta-feira-items-count><span
+                                class="fa fa-shopping-cart"></span> Cart</a>
+                        <div class="item"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-10 col-md-offset-1">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Img</th>
+                            <th>Product</th>
+                            <th class="text-center">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <tr></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td><a href="javascript:;" class="btn btn-danger remove" data-cesta-feira-clear-basket>Clear
+                                    Cart</a></td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="src/cart.js"></script>
+</body>
+
+</html>

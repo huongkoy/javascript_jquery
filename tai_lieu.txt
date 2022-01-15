@@ -1,0 +1,66 @@
+Attribute: https://freetuts.net/
+	.html(): Lấy nội dung HTML của thành phần, hoặc gán giá trị HTML cho thành phần.
+ 	.attr(): lấy giá trị hoặc thêm thuộc tính (attribute) cho thành phần.
+	.addClass: thêm class vào thẻ đc chọn.
+	(this sẽ trỏ về dối tượng nó đang thuộc về).
+ 	(gán sự kiện trong mảng phải sử dụng vòng lặp).
+	stringify: chuyển đổi sang kiểu dữ liệu, bảng mã khác. Từ javascrip-> Json.
+	Parse: từ Json -> javascript.
+	Localstorage: chỉ lưu được dạng chuỗi(string).
+	Localstorage.setItem: lưu dữ liệu vào trong localStorage( bắt buộc nhận vào 2 tham số key và value).
+	localStorage.getItem: lấy dữ liệu đã lưa ra.
+	localStorage.removeItem: xóa dữ liệu.
+	JSON.stringify():  biến thành json  chuỗi(string).
+	JSON: là một kiểu định dạng dữ liệu.
+	JSON: chỉ chấp nhận nháy kép.
+	JSON.parse: chuyển từ json string về đúng kiểu dữ liệu javascript mà nó đang mô tả.
+	Datepicker: giúp bạn hiện ra 1 lịch để chọn ngày.
+	Accordion: là một danh sách được sắp xếp theo chiều dọc hay chiều ngang có chức năng để hiển thị hay ẩn nội dung. 
+Jquery HTML:
+	- Lấy nội dung html:
+		.push() được dùng để thêm một hoặc nhiều phần tử mới vào vị trí cuối cùng của mảng.
+		.val(): Lấy giá trị hiện tại của thành phần, hoặc thay đổi giá trị cho thành phần. <input>, <textarea>, <select>.
+		.html(): lấy nội dung HTML, hoặc gán nội dung HTML vào một thành phần.
+		.text(): Lấy "nội dung văn bản" hoặc thiết lập lại "nội dung văn bản" bên trong phần tử.
+		.attr(): lấy giá trị hoặc thêm thuộc tính (attribute) cho thành phần.
+		.width(): dùng để thiết lập hoặc trả về width của một phần tử HTML
+		.height():Trả về chiều hoặc thiết lập lại chiều cao cho phần content của phần tử.
+		.position(): Lấy tọa độ hiện tại của thành phần, tọa độ này được tính dựa vào gốc của thành phần cha.
+		.empty(): trong Jquery có tác dụng làm trống nội dung của thành phần cần tác động.
+		.prev(): xác định thành phần cùng cấp ngay trước thành phần sử dụng .prev().
+	- Thêm xóa HTML:
+		.remove(): Loại bỏ các thành phần được xác định.
+		.append(): dùng để thêm nội dung vào vị trí cuối cùng bên trong phần nội dung của phần tử được chọn.
+		.appendTo(): được dùng để thêm "một hoặc nhiều phần tử HTML" vào vị trí cuối cùng bên trong phần nội dung của phần tử được chọn.
+		.empty(): dùng để xóa toàn bộ nội dung nằm bên trong phần tử được chọn.
+		.prepend(): dùng để thêm nội dung vào vị trí đầu tiên bên trong phần nội dung của phần tử được chọn.
+		.prependTo(): thêm "một hoặc nhiều phần tử HTML" vào vị trí đầu tiên bên trong phần nội dung của phần tử được chọn.
+		.insertAfter(): đây là hàm giúp chèn thêm các thẻ html vào sau một thẻ html nào đó.
+		.insertBefore(): dùng để thêm "một hoặc nhiều phần tử HTML" vào vị trí nằm ở phía trước phần tử được chọn.
+		.hasClass(): để kiểm tra xem giá trị thuộc tính class của phần tử có chứa tên lớp được chỉ định hay không( trả về true hoặc false).
+		.toggleClass(): dùng để thực hiện luân phiên giữa việc thêm/xóa tên lớp khỏi giá trị thuộc tính class của phần tử( thêm-> true, xóa-> false).
+Jquery traversing:
+	.parent():  Lấy thành phần cha trực tiếp của mỗi thành phần trong những thành phần phù hợp, có thể kết hợp vào bộ chọn (selector).
+	.children(): Lấy thành phần con trực tiếp của mỗi thành phần trong những thành phần phù hợp, có thể kết hợp vào bộ chọn (selector).
+	.find(): Giúp tìm thành phần trong thành phần cha.
+	.filter(): Giúp lọc các thành phần trong một nhóm các thành phần giống nhau.
+	.next(): xác định thành phần cùng cấp ngay kế tiếp thành phần sử dụng .next().
+	.prev(): xác định thành phần cùng cấp ngay trước thành phần sử dụng .prev().
+	.siblings(): Lấy thành phần con cùng cấp của mỗi thành phần trong một bộ chọn phù hợp. Chú ý là không chọn chính nó(khác nó).
+	.first(): Xác định thành phần đầu tiên trong các thành phần phù hợp.
+	.last(): Xác định thành phần cuối cùng trong các thành phần phù hợp.
+	.has(): Xây dựng một đối tượng jQuery mới từ một tập hợp con của các thành phần phù hợp.
+	.prepend(): trong Jquery có tác dụng chèn thêm nội dung vào đầu của thành phần cần tác động.
+	.children(): Lấy thành phần con trực tiếp của mỗi thành phần trong những thành phần phù hợp, có thể kết hợp vào bộ chọn (selector).
+Jquery event:
+	.focus(): xảy ra khi người dùng truy cập vào các phần tử như <input> <textarea> <select>.
+	.change(): xảy ra khi giá trị của các phần tử như <select> <textarea> <input> bị thay đổi.
+	.dblclick(): Kích hoạt sự kiện double click trên thành phần hoặc ràng buộc xử lý một sự kiện tới sự kiện double click trong javascript.
+	.hover(): kết hợp xử lý cả 2 sự kiện di chuyển con trỏ chuột vào thành phần (mouseenter) và di chuyển con trỏ chuột ra khỏi thành phần (mouseleave).
+	.keydown(): xảy ra khi một phím được nhấn xuống.
+	.keyup(): xảy ra khi một phím đang nhấn xuống được "nhả" ra.
+	.keypress(): xảy ra khi một phím được nhấn xuống.
+	.resize(): xảy ra khi kích thước của cửa sổ trình duyệt bị thay đổi.
+	.mousedown(): xảy ra khi người dùng "nhấp" chuột vào một phần tử.
+	.mouseenter(): Ràng buộc một xử lý tới một sự kiện mouseenter (di chuyển chuột vào thành phần), hoặc kích hoạt sự kiện mouseenter lên một thành phần.
+	.mouseleave(): Ràng buộc một xử lý tới một sự kiện mouseleave (di chuyển chuột ra khỏi thành phần), hoặc kích hoạt sự kiện mouseleave lên một thành phần.
