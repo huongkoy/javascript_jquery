@@ -20,6 +20,7 @@ var text = (document.getElementById("demo").innerHTML =
 var a = document.getElementsByClassName("inputValue");
 var b = a[0].value;
 
+
 function getValue() {
   var mang = prompt("Nhap yeu cau", "Hiển thị mảng");
   b = a[0].value;
